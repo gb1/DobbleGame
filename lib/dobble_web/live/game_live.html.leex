@@ -1,0 +1,20 @@
+
+
+<div class="game">
+  <div class="card">
+    <%= for pic <- @player1 do %>
+      <div phx-click="guess" phx-value-player="player1" phx-value-guess="pic">
+        <%= pic %>
+      </div>
+    <% end %>
+  </div>
+
+
+  <div class="card">
+    <%= for pic <- @player2 do %>
+      <div phx-click="guess" phx-value-player="player1" phx-value-guess="pic">
+        <%= pic %>
+      </div>
+    <% end %>
+  </div>
+</div   >
